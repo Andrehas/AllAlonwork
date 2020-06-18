@@ -7,7 +7,7 @@ while True:
     address = raw_input('Enter location: ')
     if len(address) < 1: break
 
-    url = serviceurl + urllib.urlencode({'sensor':'false', 'address': address, 'key':})
+    url = serviceurl + urllib.urlencode({'sensor':'false', 'address': address, 'key':''})
     print 'Retrieving', url
     uh = urllib.urlopen(url).read()
     print 'Retrieved',len(uh),'characters'
