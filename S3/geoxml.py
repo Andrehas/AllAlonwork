@@ -13,7 +13,6 @@ while True:
     print 'Retrieved',len(uh),'characters'
     print uh
     tree = ET.fromstring(uh)
-    #print uh.find('geometry').text
     #TODO
     #Return lat,lng,adress
     for element in tree.iter('location'):
